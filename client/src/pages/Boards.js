@@ -7,7 +7,7 @@ function Boards() {
 
   useEffect(() => {
     const fetchBoards = async () => {
-      const response = await axios.get('http://localhost:12331/api/boards');
+      const response = await axios.get('https://mern-task-management-eight.vercel.app/boards');
       setBoards(response.data);
     };
     fetchBoards();
