@@ -8,7 +8,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:12312/api/login', { username, password });
+      const response = await axios.post('https://mern-task-management-eight.vercel.app/login', { username, password });
       localStorage.setItem('token', response.data.token);
       window.location.href = '/boards';
     } catch (error) {
