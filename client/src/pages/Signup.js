@@ -9,7 +9,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:12312/api/signup', { username, email, password });
+      await axios.post('https://mern-task-management-eight.vercel.app//signup', { username, email, password });
       window.location.href = '/login';
     } catch (error) {
       console.error('Signup failed', error);
